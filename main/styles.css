@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(186, 186, 186);
+}
+
+.response-img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+/* Animasyonlu İconlar */
+.icons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 10% auto;
+}
+.icons i {
+  font-size: 22rem;
+  color: #a79a2d;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(0);
+  text-shadow: 0.2rem 0.2rem 0.2rem #000;
+  transition: transform 0.6s;
+}
+
+.icons i.change {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.4s 0.4s;
+}
+
+/* Daktilo Yazı */
+.ünvan {
+  color: rgb(18, 46, 80);
+  font-family: serif;
+  width: 19ch; /* Ne kadar yazı yazacaksanız karakter sayacında sayıp buraya karakter sayısı kadar yazın. */
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(200, end),
+    /* # Adımlar = # Karakter Sayısı */ alternate;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 250%;
+  text-shadow: 2px 5px 5px rgb(117, 116, 116);
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .icons i {
+    font-size: 12rem;
+    color: #a79a2d;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .icons i {
+    font-size: 6rem;
+    color: #a79a2d;
+    text-shadow: 0.1rem 0.1rem 0.1rem #000;
+  }
+}
+/* Projeler */
+.projeler-link {
+  width: 30%;
+}
+
+h2 {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-family: 'Trebuchet MS';
+}
+.projeler-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.proje-container {
+  width: 40%;
+  margin: auto;
+  max-width: 550px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.proje-img {
+  width: 100%;
+}
+.projeler-bilgiler {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #12191a87;
+}
+.projeler-bilgiler p {
+  color: white;
+  font-size: 70%;
+  padding: 0 5%;
+  margin: 0;
+}
+.proje-container:hover .projeler-bilgiler {
+  opacity: 1;
+}
+.proje-container:hover .proje-img {
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+.proje-container h4 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 5% 0;
+  font-size: 100%;
+}
+.projeler-bilgiler hr {
+  background-color: rgb(255, 255, 255);
+  margin: 5% auto;
+  height: 2px;
+}
+/* Hakkında & İletişim */
+.hakkında {
+  height: 500px;
+  border: 2px solid black;
+  margin: auto;
+  text-align: center;
+  background-color: #a2a2a2;
+  color: white;
+  border-radius: 10px;
+  box-shadow: -15px 8px 10px rgba(0, 0, 0, 0.597);
+}
+.iletisim {
+  height: 500px;
+  border: 2px solid black;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: -15px 8px 10px rgba(0, 0, 0, 0.597);
+  text-align: center;
+  background-color: #a2a2a2;
+}
+.hakkında-section {
+  margin: 5%;
+}
+.hakkında img {
+  width: 30%;
+  margin: 2% auto;
+}
