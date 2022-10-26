@@ -33,10 +33,10 @@
               <a class="nav-link px-5 active" href="./index.html#projeler">Projeler</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 active" href="#">Hakkında</a>
+              <a class="nav-link px-5 active" href="./index.html#hakkında">Hakkında</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link px-5 active" href="#">İletişim</a>
+              <a class="nav-link px-5 active" href="./index.html#iletisim">İletişim</a>
             </li>
           </ul>
         </div>
@@ -132,14 +132,35 @@
     </section>
 
     <section class="hakkında-section mx-auto container-fluid d-flex row">
-      <div class="hakkında col-5 ">
+      <div class="hakkında col-12 col-md-5" id="hakkında">
         <img src="../images/img.png" alt="Samet Akkaya">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae mollitia unde nemo corporis accusamus ratione
-          nostrum maiores quidem cupiditate, in incidunt nam iure perferendis, debitis molestiae, porro necessitatibus
-          dolore quas.</p>
+        <p> <span>Merhaba;</span> <br>
+          Ben Samet, Akdeniz Üniversitesi Gıda Teknikerliği Bölümünden Mezunum.Web Teknolojilerine ilgim 2018 de
+          başladı. Ufakta
+          olsa araştırmalar yapıyor ve Kendime ufak çaplı siteler hazırlamaya çalışıyordum.2020 Mayıs ayında eğitimlere
+          göz atmaya başladım. İlk eğitimlerim Udemy vb. platformlar oldu. Daha sonrasında Bilge Adam Akademi'den 200
+          saatlik Front-End Developer Eğitimi alırken 2021 1 Aralık da Secretcv şirketin de Jr.Front-end Developer
+          olarak işe başladım. Çalıştığım Şirket Back-End
+          ağırlıklı olduğu için daha farklı deneyimler edinmek ve kendimi daha iyi geliştirebilmek için farklı bir iş
+          arayışındayım.
+        </p>
       </div>
-      <div class="iletisim col-5 ">
-
+      <div class="iletisim col-12 col-md-5" id="iletisim">
+        <form action="mailto:burak_samet19@hotmail.com" method="get">
+          <h3>Bana Ulaşın</h3>
+          <div class="user-box">
+            <input type="text" name="ad" required>
+            <label for="Ad">Ad, Soyad</label>
+          </div>
+          <div class="user-box">
+            <input type="konu" name="konu" required>
+            <label for="konu">Konu</label>
+          </div>
+          <div class="user-box">
+            <textarea name="mesaj" id="mesaj" rows="2" placeholder="Mesajınızı Buraya Yazın.." required></textarea>
+          </div>
+          <button class="submitButton" type="submit">Gönder</button>
+        </form>
       </div>
     </section>
   </main>
