@@ -5,7 +5,9 @@
 body {
   background-color: rgb(186, 186, 186);
 }
-
+.nav-item a:hover {
+  font-size: large;
+}
 .response-img {
   width: 100%;
   height: 40vh;
