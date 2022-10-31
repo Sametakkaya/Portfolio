@@ -111,11 +111,11 @@ h2 {
   filter: blur(5px);
   -webkit-filter: blur(5px);
 }
-.proje-container h4 {
+.proje-container h3 {
   color: rgb(255, 255, 255);
   text-align: center;
   padding: 5% 0;
-  font-size: 100%;
+  font-size: 150%;
 }
 .projeler-bilgiler hr {
   background-color: rgb(255, 255, 255);
@@ -257,5 +257,9 @@ h2 {
   }
   .iletisim form {
     padding-top: 20%;
+  }
+  .proje-container h3 {
+    padding: 3% 0;
+    font-size: 100%;
   }
 }
