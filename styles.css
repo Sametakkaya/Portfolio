@@ -100,7 +100,7 @@ h2 {
 }
 .projeler-bilgiler p {
   color: white;
-  font-size: 70%;
+  font-size: 130%;
   padding: 0 5%;
   margin: 0;
 }
@@ -119,7 +119,7 @@ h2 {
 }
 .projeler-bilgiler hr {
   background-color: rgb(255, 255, 255);
-  margin: 5% auto;
+  margin: 3% auto;
   height: 2px;
 }
 /* Hakkında & İletişim */
@@ -259,7 +259,11 @@ h2 {
     padding-top: 20%;
   }
   .proje-container h3 {
-    padding: 3% 0;
+    padding: 4% 0;
     font-size: 100%;
+  }
+  .projeler-bilgiler p {
+    font-size: 70%;
+    padding: auto;
   }
 }
