@@ -10,7 +10,7 @@ body {
 }
 .response-img {
   width: 100%;
-  height: 30vh;
+  height: 40vh;
   object-fit: cover;
 }
 /* Animasyonlu İconlar */
@@ -238,6 +238,11 @@ h2 {
 }
 /* Mobil Site Ayarlamaları */
 @media only screen and (max-width: 800px) {
+  .response-img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
   /* Animasyon */
   .icons i {
     font-size: 12rem;
@@ -270,4 +275,5 @@ h2 {
     font-size: 70%;
     padding: auto;
   }
+  
 }
